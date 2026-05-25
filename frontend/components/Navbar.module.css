@@ -1,0 +1,104 @@
+.navbar {
+  position:   sticky;
+  top:        0;
+  z-index:    100;
+  background: rgba(9, 9, 15, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.inner {
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  max-width:       1200px;
+  margin:          0 auto;
+  padding:         0 1.5rem;
+  height:          60px;
+  gap:             2rem;
+}
+
+/* Logo */
+.logo {
+  display:     flex;
+  align-items: center;
+  gap:         0.5rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logoIcon {
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  width:           30px;
+  height:          30px;
+  border-radius:   8px;
+  background:      var(--accent-gradient);
+  color:           #fff;
+  box-shadow:      0 2px 12px var(--accent-glow);
+}
+
+.logoText {
+  font-size:   1.1rem;
+  font-weight: 800;
+  color:       var(--text-primary);
+  letter-spacing: -0.03em;
+}
+
+.logoAccent {
+  background:              var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip:         text;
+}
+
+.logoBadge {
+  font-size:     0.6rem;
+  font-weight:   700;
+  padding:       2px 6px;
+  border-radius: 4px;
+  background:    rgba(124, 58, 237, 0.2);
+  color:         var(--accent-light);
+  border:        1px solid rgba(124, 58, 237, 0.3);
+  letter-spacing: 0.08em;
+  margin-top:    -8px;
+}
+
+/* Links */
+.links {
+  display:     flex;
+  align-items: center;
+  gap:         0.25rem;
+  list-style:  none;
+  flex:        1;
+  justify-content: center;
+}
+
+.link {
+  display:         flex;
+  align-items:     center;
+  gap:             0.4rem;
+  padding:         0.4rem 0.85rem;
+  border-radius:   var(--radius-md);
+  font-size:       0.875rem;
+  font-weight:     500;
+  color:           var(--text-secondary);
+  text-decoration: none;
+  transition:      all var(--transition-fast);
+}
+
+.link:hover {
+  color:      var(--text-primary);
+  background: var(--bg-elevated);
+}
+
+.linkActive {
+  color:      var(--accent-light);
+  background: rgba(124, 58, 237, 0.12);
+  border:     1px solid rgba(124, 58, 237, 0.2);
+}
+.linkActive:hover {
+  background: rgba(124, 58, 237, 0.18);
+}

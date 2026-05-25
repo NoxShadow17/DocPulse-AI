@@ -1,0 +1,146 @@
+.page { padding-bottom: 5rem; }
+
+/* ── Hero ── */
+.hero {
+  text-align:     center;
+  padding:        6rem 1.5rem 4rem;
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  gap:            1.25rem;
+  max-width:      800px;
+  margin:         0 auto;
+}
+
+.heroBadge {
+  display:       inline-flex;
+  align-items:   center;
+  gap:           0.4rem;
+  font-size:     0.78rem;
+  font-weight:   600;
+  padding:       0.3rem 0.85rem;
+  border-radius: 9999px;
+  background:    rgba(124,58,237,0.15);
+  color:         var(--accent-light);
+  border:        1px solid rgba(124,58,237,0.3);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  animation:     fade-in-up 0.5s ease forwards;
+}
+
+.heroTitle {
+  font-size:   clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  animation:   fade-in-up 0.6s ease 0.1s both;
+}
+
+.heroSubtitle {
+  font-size:  1.05rem;
+  max-width:  560px;
+  color:      var(--text-secondary);
+  animation:  fade-in-up 0.6s ease 0.2s both;
+}
+
+.heroCta {
+  display:   flex;
+  gap:       1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fade-in-up 0.6s ease 0.3s both;
+}
+
+/* ── Stats ── */
+.statsRow {
+  display:               grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap:                   1rem;
+  margin-bottom:         3rem;
+}
+
+.statCard {
+  display:     flex;
+  align-items: center;
+  gap:         1rem;
+  padding:     1.25rem 1.5rem;
+}
+
+.statIcon {
+  width: 44px; height: 44px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(124,58,237,0.1);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(124,58,237,0.2);
+}
+
+.statValue { font-size: 1.6rem; font-weight: 800; line-height: 1; }
+.statLabel { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+/* ── Features ── */
+.features { margin-bottom: 3rem; }
+
+.sectionTitle {
+  font-size:     1.6rem;
+  font-weight:   700;
+  margin-bottom: 1.5rem;
+  text-align:    center;
+}
+
+.featureGrid {
+  display:               grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap:                   1rem;
+}
+
+.featureCard {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureIcon {
+  width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(124,58,237,0.12);
+  border-radius: var(--radius-md);
+  color: var(--accent-light);
+  border: 1px solid rgba(124,58,237,0.25);
+  flex-shrink: 0;
+}
+
+.featureCard h3 { font-size: 1rem; }
+.featureCard p  { font-size: 0.875rem; color: var(--text-secondary); }
+
+/* ── Pipeline ── */
+.pipeline { margin-bottom: 3rem; }
+
+.pipelineFlow {
+  display:     flex;
+  align-items: center;
+  flex-wrap:   wrap;
+  gap:         0.5rem;
+  justify-content: center;
+}
+
+.pipelineStep { display: flex; align-items: center; gap: 0.5rem; }
+
+.pipelineBox {
+  display:     flex;
+  align-items: center;
+  gap:         0.75rem;
+  padding:     0.75rem 1.25rem;
+}
+
+.pipelineIndex {
+  width: 24px; height: 24px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent-gradient);
+  border-radius: 50%;
+  font-size: 0.72rem; font-weight: 700; color: #fff;
+  flex-shrink: 0;
+}
+
+.pipelineLabel { font-size: 0.875rem; font-weight: 600; white-space: nowrap; }
+
+.pipelineArrow { color: var(--accent-primary); flex-shrink: 0; }

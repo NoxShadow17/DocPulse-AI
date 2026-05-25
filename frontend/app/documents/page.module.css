@@ -1,0 +1,62 @@
+.page { padding: 2.5rem 0 5rem; }
+
+.header {
+  display:       flex;
+  align-items:   flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap:           1rem;
+  flex-wrap:     wrap;
+}
+
+.title {
+  display:     flex;
+  align-items: center;
+  gap:         0.75rem;
+  font-size:   1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle { color: var(--text-secondary); font-size: 0.9rem; }
+
+.uploadSection { margin-bottom: 2.5rem; }
+
+.errorBanner {
+  background:    rgba(239,68,68,0.1);
+  border:        1px solid rgba(239,68,68,0.3);
+  border-radius: var(--radius-md);
+  padding:       0.85rem 1.25rem;
+  color:         var(--status-error);
+  font-size:     0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.section { margin-bottom: 2rem; }
+
+.sectionTitle {
+  display:       flex;
+  align-items:   center;
+  gap:           0.75rem;
+  font-size:     1rem;
+  font-weight:   600;
+  color:         var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display:               grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap:                   1rem;
+}
+
+.skeletonCard { height: 160px; }
+
+.empty {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  gap:            1rem;
+  padding:        4rem 2rem;
+  color:          var(--text-muted);
+  text-align:     center;
+}
