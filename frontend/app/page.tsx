@@ -121,7 +121,7 @@ export default function HomePage() {
 function StatCard({
   icon: Icon, label, value, color,
 }: {
-  icon: React.ComponentType<{ size?: number }>;
+  icon: React.ComponentType<{ size?: number | string }>;
   label: string;
   value: string;
   color?: string;
