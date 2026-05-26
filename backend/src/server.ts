@@ -19,6 +19,10 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 // ── Health ───────────────────────────────────────────────────────────────────
+app.get('/', (_req, res) => {
+  res.json({ message: 'DocuPulse Backend API', version: '1.0.0', endpoints: { health: '/health', upload: '/api/upload', search: '/api/search', documents: '/api/documents' } });
+});
+
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok', service: 'docpulse-backend', timestamp: new Date().toISOString() });
 });
